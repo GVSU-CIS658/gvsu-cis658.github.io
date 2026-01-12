@@ -25,7 +25,7 @@ to our Web Architecutre Class. This course provides an advanced study of modern 
 
 | Week | Date | Topics | Resources |
 | --- | --- | --- | --- |
-| 1 | 01/12 | Syllabus, Course Introduction, Docker, HTML, Quiz 1 | Resources |
+| 1 | 01/12 | [Syllabus](assets/pdf/Syllabus-Intro.pdf), [Introduction](assets/pdf/Introduction.pdf), [Docker](assets/pdf/Docker.pdf), [HTML](assets/pdf/HTML.pdf) | {ref}`resources <content:references:w1>` |
 | 2 | 01/19 | **Martin Luther King, Jr. Recess (No Class)** | Resources |
 | 3 | 01/26 | CSS fundamentals, CSS Grid and Flexbox, Assignment 1, Quiz 2 | Resources |
 | 4 | 02/02 | TypeScript fundamentals, Quiz 3 | Resources |
