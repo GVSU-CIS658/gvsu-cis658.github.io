@@ -1,6 +1,6 @@
 # Welcome
 
-to our Web Architecutre Class. This course provides an advanced study of modern web application development with an emphasis on system design, scalable front-end architectures, and cloud-based data services. Students examine current frameworks, programming models, and development workflows used to build maintainable and responsive web applications. The course focuses on component-based front-end development using Vue.js, state management, asynchronous communication, and integration with cloud databases and authentication services. Additional topics include API design, client–server interaction, data modeling, and best practices for building secure and reliable web applications. Students complete a substantial project that integrates these concepts into a fully functional web application.
+to our Web Architectures Class. This course provides an advanced study of modern web application development with an emphasis on system design, scalable front-end architectures, and cloud-based data services. Students examine current frameworks, programming models, and development workflows used to build maintainable and responsive web applications. The course focuses on component-based front-end development using Vue.js, state management, asynchronous communication, and integration with cloud databases and authentication services. Additional topics include API design, client–server interaction, data modeling, and best practices for building secure and reliable web applications. Students complete a substantial project that integrates these concepts into a fully functional web application.
 
 ## Course Information
 
@@ -25,9 +25,9 @@ to our Web Architecutre Class. This course provides an advanced study of modern 
 
 | Week | Date | Topics | Resources |
 | --- | --- | --- | --- |
-| 1 | 01/12 | [Syllabus](assets/pdf/Syllabus-Intro.pdf), [Introduction](assets/pdf/Introduction.pdf), [Docker](assets/pdf/Docker.pdf), [HTML](assets/pdf/HTML.pdf) | {ref}`resources <content:references:w1>` |
+| 1 | 01/12 | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) \| [Docker](assets/pdf/Docker.pdf) \| [HTML](assets/pdf/HTML.pdf) \| [Quiz 1](quizzes/1.md) | {ref}`resources <content:references:w1>` |
 | 2 | 01/19 | **Martin Luther King, Jr. Recess (No Class)** | Resources |
-| 3 | 01/26 | CSS fundamentals, CSS Grid and Flexbox, Assignment 1, Quiz 2 | Resources |
+| 3 | 01/26 | [CSS 1](assets/pdf/CSS-I.pdf) \| [CSS 2](assets/pdf/CSS-II.pdf) \| [CSS Grid and Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) \| [Quiz 2](quizzes/2.md) \| [Assignment 1](assignments/css-html.md) | {ref}`resources <content:references:w3>` |
 | 4 | 02/02 | TypeScript fundamentals, Quiz 3 | Resources |
 | 5 | 02/09 | Term project introduction, TypeScript (advanced topics) | Resources |
 | 6 | 02/16 | TypeScript (continued), Quiz 4 | Resources |
