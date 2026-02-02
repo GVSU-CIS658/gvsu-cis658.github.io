@@ -28,7 +28,7 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 1 | 01/12 | [Syllabus](assets/pdf/Syllabus-Intro.pdf) \| [Introduction](assets/pdf/Introduction.pdf) \| [Docker](assets/pdf/Docker.pdf) \| [HTML](assets/pdf/HTML.pdf) \| [Quiz 1](quizzes/1.md) | {ref}`resources <content:references:w1>` |
 | 2 | 01/19 | **Martin Luther King, Jr. Recess (No Class)** | Resources |
 | 3 | 01/26 | [CSS 1](assets/pdf/CSS-I.pdf) \| [CSS 2](assets/pdf/CSS-II.pdf) \| [CSS Grid and Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) \| [Quiz 2](quizzes/2.md) \| [Assignment 1](assignments/css-html.md) | {ref}`resources <content:references:w3>` |
-| 4 | 02/02 | TypeScript fundamentals, Quiz 3 | Resources |
+| 4 | 02/02 | [TypeScript Intro](assets/pdf/TypeScript-I.pdf) \| [TypeScript Basics](assets/pdf/TypeScript-II.pdf) \| [Quiz 3](quizzes/3.md) | Resources |
 | 5 | 02/09 | Term project introduction, TypeScript (advanced topics) | Resources |
 | 6 | 02/16 | TypeScript (continued), Quiz 4 | Resources |
 | 7 | 02/23 | HTTP fundamentals, JavaScript modules, Vue.js fundamentals, Assignment 2 | Resources |
