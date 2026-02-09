@@ -29,8 +29,8 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 2 | 01/19 | **Martin Luther King, Jr. Recess (No Class)** | Resources |
 | 3 | 01/26 | [CSS 1](assets/pdf/CSS-I.pdf) \| [CSS 2](assets/pdf/CSS-II.pdf) \| [CSS Grid and Flexbox](assets/pdf/CSS-Grid-Flexbox.pdf) \| [Quiz 2](quizzes/2.md) \| [Assignment 1](assignments/css-html.md) | {ref}`resources <content:references:w3>` |
 | 4 | 02/02 | [TypeScript Intro](assets/pdf/TypeScript-I.pdf) \| [TypeScript Basics](assets/pdf/TypeScript-II.pdf) \| [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
-| 5 | 02/09 | Term project introduction, TypeScript (Higher-order Functions) | {ref}`resources <content:references:w5>` |
-| 6 | 02/16 | TypeScript (continued), Quiz 4 | Resources |
+| 5 | 02/09 | [Term project](project/term.md) \| TypeScript (Higher-order Functions): [1](assets/pdf/TypeScript-III.pdf), [2](assets/pdf/TypeScript-IV.pdf) \| [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w5>` |
+| 6 | 02/16 | TypeScript (continued) | Resources |
 | 7 | 02/23 | HTTP fundamentals, JavaScript modules, Vue.js fundamentals, Assignment 2 | Resources |
 | 8 | 03/02 | Vue.js (continued), Promises and asynchronous programming, Quiz 5 | Resources |
 | 9 | 03/09 | **Spring Break (No Class)** | Resources |
