@@ -17,10 +17,10 @@ By completing this assignment, you will practice:
 - Managing source code with GitHub
 - Deploying a static site using GitHub Pages
 
-<!-- ## Best Solutions:
+## Best Solutions:
 
-- Bharghav Bolla: [Zen Garden](https://gvsu-cis658.github.io/assignment1-bharghavbolla/) \| [CSS](https://gvsu-cis658.github.io/assignment1-bharghavbolla/assets/main-DbsSoWQS.css)
-- Benjamin Hannah: [Zen Garden](https://gvsu-cis658.github.io/assignment1-BenjaminHannah/) \| [CSS](https://github.com/GVSU-CIS658/assignment1-BenjaminHannah/blob/main/main.css) -->
+- Rexford Koomson: [Zen Garden](https://gvsu-cis658.github.io/assignment1-rexfordkode/) \| [CSS](https://github.com/GVSU-CIS658/assignment1-rexfordkode/blob/gh-pages/main.css)
+- Esther Okereke: [Zen Garden](https://gvsu-cis658.github.io/assignment1-Estherokereke/) \| [CSS](https://github.com/GVSU-CIS658/assignment1-Estherokereke/blob/main/main.css)
 
 ## Preparation
 
