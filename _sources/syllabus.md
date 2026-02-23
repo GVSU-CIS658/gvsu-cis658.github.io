@@ -31,7 +31,7 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 4 | 02/02 | [TypeScript Intro](assets/pdf/TypeScript-I.pdf) \| [TypeScript Basics](assets/pdf/TypeScript-II.pdf) \| [Quiz 3](quizzes/3.md) | {ref}`resources <content:references:w4>` |
 | 5 | 02/09 | [Term project](project/term.md) \| TypeScript (Higher-order Functions): [1](assets/pdf/TypeScript-III.pdf), [2](assets/pdf/TypeScript-IV.pdf) \| [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w5>` |
 | 6 | 02/16 | [Interface, Generic Type](assets/pdf/TypeScript-V.pdf) \| [DOM Manipulation](assets/pdf/TypeScript-VI.pdf) \| [Sass](assets/pdf/SASS.pdf) | {ref}`resources <content:references:w6>` |
-| 7 | 02/23 | HTTP fundamentals, JavaScript modules, Vue.js fundamentals, Assignment 2 | Resources |
+| 7 | 02/23 | [HTTP](assets/pdf/HTTP.pdf) \| [HTTPs](assets/pdf/HTTPS.pdf)\|[JS Modules](assets/pdf/JS-Modules.pdf)\| [Vue.js fundamentals](assets/pdf/VueJS-I.pdf), Assignment 2 | Resources |
 | 8 | 03/02 | Vue.js (continued), Promises and asynchronous programming, Quiz 5 | Resources |
 | 9 | 03/09 | **Spring Break (No Class)** | Resources |
 | 10 | 03/16 | State management with Pinia, Assignment 3 | Resources |
