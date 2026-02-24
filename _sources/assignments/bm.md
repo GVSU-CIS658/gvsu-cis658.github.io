@@ -116,7 +116,7 @@ setupSyrupListeners();
 
 - When the user selects a syrup option, update the syrup layer in the mug.
 - Use the `syrups` color map (provided in starter code) to look up the selected syrup color.
-- Set CSS variable `--syrup-color` on the `.syrup` element so SCSS can use it.
+- Set CSS variable `--syrup-color` on the `.syrup` element so SCSS can use it. For how to set a CSS variable in JavaScript, please refer to the following documentation: [https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties)
 
 **`setupSyrupListeners` requirements:**
 
