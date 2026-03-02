@@ -32,7 +32,7 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 5 | 02/09 | [Term project](project/term.md) \| TypeScript (Higher-order Functions): [1](assets/pdf/TypeScript-III.pdf), [2](assets/pdf/TypeScript-IV.pdf) \| [Quiz 4](quizzes/4.md) | {ref}`resources <content:references:w5>` |
 | 6 | 02/16 | [Interface, Generic Type](assets/pdf/TypeScript-V.pdf) \| [DOM Manipulation](assets/pdf/TypeScript-VI.pdf) \| [Sass](assets/pdf/SASS.pdf) | {ref}`resources <content:references:w6>` |
 | 7 | 02/23 | [HTTP](assets/pdf/HTTP.pdf) \| [HTTPs](assets/pdf/HTTPS.pdf) \|[JS Modules](assets/pdf/JS-Modules.pdf) \| [Vue.js fundamentals](assets/pdf/VueJS-I.pdf) \| [Assignment 2](assignments/bm.md) | {ref}`resources <content:references:w7>` |
-| 8 | 03/02 | Vue.js (continued) \| [Assignment 3](assignments/cdm.md) \| [Quiz 5](quizzes/5.md) | {ref}`resources <content:references:w8>` |
+| 8 | 03/02 | [Vue.js 2](assets/pdf/VueJS-II.pdf) \| [Vue.js 3](assets/pdf/VueJS-III.pdf) \| [Assignment 3](assignments/cdm.md) \| [Quiz 5](quizzes/5.md) | {ref}`resources <content:references:w8>` |
 | 9 | 03/09 | **Spring Break (No Class)** | Resources |
 | 10 | 03/16 | State management with Pinia, Promises, Assignment 3 | Resources |
 | 11 | 03/23 | Vuetify (UI components and layout), Quiz 6 | Resources |
