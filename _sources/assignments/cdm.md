@@ -14,9 +14,9 @@ In this assignment, you will leverage Vue.js to create a dynamic and interactive
 ## Preparation
 
 1. Accept your instructor's [GitHub classroom invitation](https://classroom.github.com/a/ygziDf5z) to set up your project repository.
-   1. **Select Your Name:** ![select-name](../assets/img/project1-selectname.jpg)
-   2. **Initialize Your Project Repository:**
-   3. **Clone the Repository:** You're now ready to clone the repository. In your `terminal`, use the following command with your SSH repository link to download the repository to your local machine:
+   1. **Select Your Name:** ![select-name](../assets/img/github-classroom-selectname.png)
+   2. **Initialize Your Assignment Repository:** ![init-repo](../assets/img/github-classroom-initrepo.png)
+   3. **Clone the Repository:** ![clone](../assets/img/github-classroom-sshclone.png) You're now ready to clone the repository. In your `terminal`, use the following command with your SSH repository link to download the repository to your local machine:
 
       ```bash
       git clone [YOUR_SSH_REPO_LINK]
@@ -84,6 +84,6 @@ In this assignment, you will develop a Beverage Vue Application. Your objective 
 
 - Github Page Setup
   - Set up your GitHub repository for GitHub Pages deployment. Follow the steps shown in the image below: ![Layout](../assets/img/project1-githubpage.jpg).
-  - Your web application will be accessible at the URL: gvsu-cis371.github.io/YOUR-REPO
+  - Your web application will be accessible at the URL: gvsu-cis658.github.io/YOUR-REPO
 
 - Submit the URL of your GitHub Page in Blackboard.
