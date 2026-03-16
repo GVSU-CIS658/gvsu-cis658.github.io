@@ -15,7 +15,7 @@ By completing this assignment, you will practice:
 
 ## Best Solutions:
 
--
+- Jason Omemu: [Code](https://github.com/GVSU-CIS658/assignment2-json-sudo/tree/main)
 -
 
 ## Preparation
