@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Quiz 5 Vue 3 Fundamentals &#8212; GVSU CIS 371 - Web Application Programming</title>
+    <title>Quiz 6 Vue 3 and Pinia Basics &#8212; GVSU CIS 371 - Web Application Programming</title>
   
   
   
@@ -60,12 +60,12 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'quizzes/5';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'quizzes/6';</script>
     <link rel="icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Quiz 6 Vue 3 and Pinia Basics" href="6.html" />
-    <link rel="prev" title="Quiz 4 High-order Functions" href="4.html" />
+    <link rel="next" title="1. CSS Zen Garden" href="../assignments/css-html.html" />
+    <link rel="prev" title="Quiz 5 Vue 3 Fundamentals" href="5.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -179,8 +179,8 @@
 <li class="toctree-l1"><a class="reference internal" href="2.html">Quiz 2 CSS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3.html">Quiz 3 TypeScript Basics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4.html">Quiz 4 High-order Functions</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quiz 5 Vue 3 Fundamentals</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6.html">Quiz 6 Vue 3 and Pinia Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5.html">Quiz 5 Vue 3 Fundamentals</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Quiz 6 Vue 3 and Pinia Basics</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
 <ul class="nav bd-sidenav">
@@ -263,7 +263,7 @@
       
       
       
-      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fquizzes/5.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fquizzes/6.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -293,7 +293,7 @@
       
       
       
-      <li><a href="../_sources/quizzes/5.md" target="_blank"
+      <li><a href="../_sources/quizzes/6.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +367,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Quiz 5 Vue 3 Fundamentals</h1>
+    <h1>Quiz 6 Vue 3 and Pinia Basics</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -381,75 +381,30 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="quiz-5-vue-3-fundamentals">
-<h1>Quiz 5 Vue 3 Fundamentals<a class="headerlink" href="#quiz-5-vue-3-fundamentals" title="Link to this heading">#</a></h1>
-<p>Please complete the following tasks in a Vue 3 application to build a functional <strong>Book Manager</strong> component.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="quiz-6-vue-3-and-pinia-basics">
+<h1>Quiz 6 Vue 3 and Pinia Basics<a class="headerlink" href="#quiz-6-vue-3-and-pinia-basics" title="Link to this heading">#</a></h1>
+<p>In this quiz, you will build on your understanding of Vue 3 and Pinia by adding functionality to a <strong>User Management</strong> project.</p>
 <hr class="docutils" />
-<p>Given the following book array,</p>
-<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b1&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;1984&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;George Orwell&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1949</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dystopia&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b2&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;The Great Gatsby&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;F. Scott Fitzgerald&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1925</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Tragedy&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b3&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Sapiens: A Brief History of Humankind&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Yuval Noah Harari&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">2011</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;History&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b4&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Educated&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Tara Westover&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">2018</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Memoir&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b5&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Moby Dick&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Herman Melville&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1851</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Adventure&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="w">  </span><span class="p">{</span>
-<span class="w">    </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;b6&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">title</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Brave New World&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">author</span><span class="o">:</span><span class="w"> </span><span class="s2">&quot;Aldous Huxley&quot;</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">year</span><span class="o">:</span><span class="w"> </span><span class="mf">1932</span><span class="p">,</span>
-<span class="w">    </span><span class="nx">genres</span><span class="o">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;Fiction&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Dystopia&quot;</span><span class="p">],</span>
-<span class="w">  </span><span class="p">},</span>
-<span class="p">];</span>
-</pre></div>
-</div>
-<ol class="arabic">
-<li><p>Create a <code class="docutils literal notranslate"><span class="pre">Book.vue</span></code> component that receives the following properties:</p>
+<p>Given a starter project with a basic UserStore and a list of random users <a class="reference external" href="https://stackblitz.com/edit/vitejs-vite-rrzxb2?file=src%2FApp.vue,src%2Fstores%2FUserStore.ts">here</a>.</p>
+<ol class="arabic simple">
+<li><p>Delete User</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> (string)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">author</span></code> (string)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">year</span></code> (number)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">genres</span></code> (array of strings)</p></li>
-<li><p>The component should display the title, author, year, and genres.</p></li>
+<li><p>Add a delete button next to each user in App.vue. When clicked, this button should remove the user from the UserStore. You can implement this using either $patch or an action in UserStore.</p></li>
 </ul>
 </li>
-<li><p>Display Books Using <code class="docutils literal notranslate"><span class="pre">v-for</span></code> in <code class="docutils literal notranslate"><span class="pre">App.vue</span></code></p>
-<p>In <code class="docutils literal notranslate"><span class="pre">App.vue</span></code>, define a list of books using the provided array. Use the <code class="docutils literal notranslate"><span class="pre">Book.vue</span></code> component created in Q1 to display each book using <code class="docutils literal notranslate"><span class="pre">v-for</span></code>.</p>
+<li><p>Automatic Refill When Empty</p>
+<ul class="simple">
+<li><p>Use $subscribe on the UserStore to monitor the users state.</p></li>
+<li><p>If the users list becomes empty, automatically call the fill action to fetch and refill random users from the Random User API.</p></li>
+</ul>
 </li>
-<li><p>Filter Fiction Books</p>
-<p>In <code class="docutils literal notranslate"><span class="pre">App.vue</span></code>, add a checkbox that allows users to toggle between showing only Fiction books and all books. You can choose any method or approach to implement this functionality. The goal is to ensure that the list of books updates dynamically based on whether the “Show Fiction Only” option is selected.</p>
+<li><p>Add Sorting by First Name</p>
+<ul class="simple">
+<li><p>In the UserStore, add a getter that returns users sorted by first name.</p></li>
+<li><p>In App.vue, create radio buttons or checkboxes to enable users to toggle sorting on or off by first name.</p></li>
+</ul>
 </li>
 </ol>
-<p>Test your solutions on <a class="reference external" href="https://play.vuejs.org/#eNp9kD0PgjAQhv8Kudmw6MSmhkEHNerYhZQTi6Vt+oEkhP9uWwI6GLbL+7yXPHc9bJVKW4eQAazAGirFg1VpbaTwUU9EkhCgslGMoz4ry6QwBLIkksAKzuX7GDOrHa6mnD6Rvv7ktelCRuCi0aBukcDMbKErtCPObyfs/DzDRpaO+/YCvKKR3AXHsbZzovTaP71oe2iU1JaJ6m7yzqIw01FBNDSH2Cfg/7JfOP2ru043cY+IAYYPKNBtWQ==">play.vuejs.org</a>:</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -483,20 +438,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="4.html"
+       href="5.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Quiz 4 High-order Functions</p>
+        <p class="prev-next-title">Quiz 5 Vue 3 Fundamentals</p>
       </div>
     </a>
     <a class="right-next"
-       href="6.html"
+       href="../assignments/css-html.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Quiz 6 Vue 3 and Pinia Basics</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>CSS Zen Garden</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
