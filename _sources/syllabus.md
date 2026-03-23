@@ -34,10 +34,10 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 7 | 02/23 | [HTTP](assets/pdf/HTTP.pdf) \| [HTTPs](assets/pdf/HTTPS.pdf) \|[JS Modules](assets/pdf/JS-Modules.pdf) \| [Vue.js fundamentals](assets/pdf/VueJS-I.pdf) \| [Assignment 2](assignments/bm.md) | {ref}`resources <content:references:w7>` |
 | 8 | 03/02 | [Vue.js 2](assets/pdf/VueJS-II.pdf) \| [Vue.js 3](assets/pdf/VueJS-III.pdf) \| [Assignment 3](assignments/cdm.md) \| [Quiz 5](quizzes/5.md) | {ref}`resources <content:references:w8>` |
 | 9 | 03/09 | **Spring Break (No Class)** | Resources |
-| 10 | 03/16 | [Promise](assets/pdf/Promise.pdf) \| [Pinia 1](assets/pdf/Pinia.pdf) \| [Pinia 2](assets/pdf/Pinia-II.pdf) \| [Assignment 4](assignments/bs.md) \| [Quiz 6](quizzes/6.md) | Resources |
-| 11 | 03/23 | Vuetify (UI components and layout), Quiz 6 | Resources |
-| 12 | 03/30 | Vue Router, Assignment 4, Quiz 7 | Resources |
-| 13 | 04/06 | Cloud database integration with Firestore, Firebase Authentication | Resources |
-| 14 | 04/13 | Fetch and Axios, ExpressJS overview, Assignment 5 | Resources |
-| 15 | 04/20 | Final project studio | Resources |
+| 10 | 03/16 | [Promise](assets/pdf/Promise.pdf) \| [Pinia 1](assets/pdf/Pinia.pdf) \| [Pinia 2](assets/pdf/Pinia-II.pdf) \| [Assignment 4](assignments/bs.md) \| [Quiz 6](quizzes/6.md) | {ref}`resources <content:references:w10>` |
+| 11 | 03/23 | Vue Router, Vuetify (UI components and layout) \| [Quiz 7] | {ref}`resources <content:references:w11>` |
+| 12 | 03/30 | Cloud database integration with Firestore, Firebase Authentication, Assignment 5 | {ref}`resources <content:references:w12>` |
+| 13 | 04/06 | Fetch and Axios, ExpressJS, Assignment 6 | {ref}`resources <content:references:w13>` |
+| 14 | 04/13 | TBD, Assignment 7 | {ref}`resources <content:references:w14>` |
+| 15 | 04/20 | Final project studio | {ref}`resources <content:references:w15>` |
 | 16 | 04/27 | **Final Project Presentation** |  |
