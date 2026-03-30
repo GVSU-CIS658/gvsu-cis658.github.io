@@ -36,8 +36,8 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 9 | 03/09 | **Spring Break (No Class)** | Resources |
 | 10 | 03/16 | [Promise](assets/pdf/Promise.pdf) \| [Pinia 1](assets/pdf/Pinia.pdf) \| [Pinia 2](assets/pdf/Pinia-II.pdf) \| [Assignment 4](assignments/bs.md) \| [Quiz 6](quizzes/6.md) | {ref}`resources <content:references:w10>` |
 | 11 | 03/23 | [Vue Router](assets/pdf/Vue-Router.pdf) \| [Vuetify](assets/pdf/Vuetify.pdf) \| [Vuetify 2](assets/pdf/Vuetify-II.pdf) \| [Quiz 7](quizzes/7.md) | {ref}`resources <content:references:w11>` |
-| 12 | 03/30 | Cloud database integration with Firestore, Firebase Authentication, Assignment 5 | {ref}`resources <content:references:w12>` |
-| 13 | 04/06 | Fetch and Axios, ExpressJS, Assignment 6 | {ref}`resources <content:references:w13>` |
-| 14 | 04/13 | TBD, Assignment 7 | {ref}`resources <content:references:w14>` |
+| 12 | 03/30 | [Firestore 1](assets/pdf/Firestore-I.pdf) \| [Firestore 2](assets/pdf/Firestore-II.pdf) \| [Firebase Authentication](assets/pdf/FirebaseAuthentication.pdf) \| Assignment 5 | {ref}`resources <content:references:w12>` |
+| 13 | 04/06 | Fetch and Axios, ExpressJS | {ref}`resources <content:references:w13>` |
+| 14 | 04/13 | TBD | {ref}`resources <content:references:w14>` |
 | 15 | 04/20 | Final project studio | {ref}`resources <content:references:w15>` |
 | 16 | 04/27 | **Final Project Presentation** |  |
