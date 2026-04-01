@@ -11,6 +11,15 @@ In this assignment, you will leverage Vue.js to create a dynamic and interactive
 - **Vue 3 Components with Properties:** Create Vue 3 components that accept properties.
 - **Slots:** Use Vue's slot system to create flexible and reusable component templates.
 
+## Best Solutions
+
+- [Jason Omemu](https://gvsu-cis658.github.io/assignment3-json-sudo/)
+- [Ryley Rawlings](https://gvsu-cis658.github.io/assignment3-Rawlingsryl/)
+- [Rajeshwari Galugu](https://gvsu-cis658.github.io/assignment3-rajeshwari-gith/)
+- [Benjamin Hannah](https://gvsu-cis658.github.io/assignment3-BenjaminHannah/)
+- [Lloyd Nguyen](https://gvsu-cis658.github.io/assignment3-RukiYakutoshi16/)
+- [Christopher Sloma](https://gvsu-cis658.github.io/assignment3-csloma63/)
+
 ## Preparation
 
 1. Accept your instructor's [GitHub classroom invitation](https://classroom.github.com/a/ygziDf5z) to set up your project repository.
