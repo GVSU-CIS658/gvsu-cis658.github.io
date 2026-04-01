@@ -9,6 +9,14 @@ In this homework, you will extend your previous project Custom Drink Maker by bu
 - **Pinia Integration:** Implement Pinia to manage and store the state of user-created beverage recipes.
 - **User Interaction:** Enhance the user interface to allow users to create and view beverage combinations easily.
 
+## Best Solutions
+
+- [Lilly Jackson](https://gvsu-cis658.github.io/assignment4-lillyjacks/)
+- [Christopher Sloma](https://gvsu-cis658.github.io/assignment4-csloma63/)
+- [Hoan Lam](https://gvsu-cis658.github.io/assignment4-clcik-click/)
+- [Lloyd Nguyen](https://gvsu-cis658.github.io/assignment4-RukiYakutoshi16/)
+- [Ryley Rawlings](https://gvsu-cis658.github.io/assignment4-Rawlingsryl/)
+
 ## Instructions
 
 Accept your instructor’s [GitHub Classroom invitation](https://classroom.github.com/a/EMP6FVem) to create your project repository.
