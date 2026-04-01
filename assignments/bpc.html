@@ -484,9 +484,9 @@
 </li>
 <li><p>Include a <code class="docutils literal notranslate"><span class="pre">setUser(user:</span> <span class="pre">User</span> <span class="pre">|</span> <span class="pre">null)</span></code> action that:</p>
 <ul>
-<li><p>You may need to declare a user state in the store, so in setUser() you can save the Firebase user in the store.</p></li>
-<li><p>Stops the previous Firestore listener when the user changes,</p></li>
-<li><p>Starts a new listener for the new user,</p></li>
+<li><p>You may need to declare a user state in the store, so in setUser() you can save the current Firebase user in a user state.</p></li>
+<li><p>Detaches the previous Firestore listener when the user changes or logs out.</p></li>
+<li><p>Starts a new listener that watches only the beverages created by that user.</p></li>
 <li><p>Updates beverage data when Firestore reports changes,</p></li>
 <li><p>Sets <code class="docutils literal notranslate"><span class="pre">currentBeverage</span></code> correctly when the beverage list updates.</p></li>
 </ul>
@@ -578,7 +578,7 @@
 <li><p>Each user can view only their own saved beverages</p></li>
 <li><p>Selecting a saved beverage updates the preview in the mug</p></li>
 </ul>
-<p>Reference demo: <a class="reference external" href="https://gvsu-cis658.github.io/BrewPortal/">Expected Outcome Demo</a></p>
+<p>Reference demo: <a class="reference external" href="https://gvsu-cis658.github.io/BrewPortalInTheCloud/">Expected Outcome Demo</a></p>
 </section>
 <section id="grading-rubric">
 <h2>Grading Rubric<a class="headerlink" href="#grading-rubric" title="Link to this heading">#</a></h2>

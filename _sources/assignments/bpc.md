@@ -86,9 +86,9 @@ Your store should:
   - Run `init()` before rendering the app.
 
 - Include a `setUser(user: User | null)` action that:
-  - You may need to declare a user state in the store, so in setUser() you can save the Firebase user in the store.
-  - Stops the previous Firestore listener when the user changes,
-  - Starts a new listener for the new user,
+  - You may need to declare a user state in the store, so in setUser() you can save the current Firebase user in a user state.
+  - Detaches the previous Firestore listener when the user changes or logs out.
+  - Starts a new listener that watches only the beverages created by that user.
   - Updates beverage data when Firestore reports changes,
   - Sets `currentBeverage` correctly when the beverage list updates.
 
@@ -159,7 +159,7 @@ You should also add:
 - Each user can view only their own saved beverages
 - Selecting a saved beverage updates the preview in the mug
 
-Reference demo: [Expected Outcome Demo](https://gvsu-cis658.github.io/BrewPortal/)
+Reference demo: [Expected Outcome Demo](https://gvsu-cis658.github.io/BrewPortalInTheCloud/)
 
 ## Grading Rubric
 
