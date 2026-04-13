@@ -38,6 +38,6 @@ to our Web Architectures Class. This course provides an advanced study of modern
 | 11 | 03/23 | [Vue Router](assets/pdf/Vue-Router.pdf) \| [Vuetify](assets/pdf/Vuetify.pdf) \| [Vuetify 2](assets/pdf/Vuetify-II.pdf) \| [Quiz 7](quizzes/7.md) | {ref}`resources <content:references:w11>` |
 | 12 | 03/30 | [🎬](https://youtu.be/TJwJKIXvCUs),[Firestore 1](assets/pdf/Firestore-I.pdf) \| [🎬](https://youtu.be/G3VsozLdAug),[Firestore 2](assets/pdf/Firestore-II.pdf) \| [🎬](https://youtu.be/uP0G6pWWhL0),[Authentication](assets/pdf/FirebaseAuthentication.pdf) \| [Assignment 5](assignments/bpc.md) | {ref}`resources <content:references:w12>` |
 | 13 | 04/06 | [🎬](https://youtu.be/ewSBqYgUQj0),Assignment 3 & [🎬](https://youtu.be/u4iK8NKZOPg),4 Review \| [🎬](https://youtu.be/Q69TrN-pvhY),[Fetch and Axios](assets/pdf/Fetch-Axios.pdf) | {ref}`resources <content:references:w13>` |
-| 14 | 04/13 | "Web Applications and AI" Discussion | {ref}`resources <content:references:w14>` |
+| 14 | 04/13 | "Web Applications and AI" Discussion, [CodeX](codex.md) | {ref}`resources <content:references:w14>` |
 | 15 | 04/20 | Hackathon | {ref}`resources <content:references:w15>` |
 | 16 | 04/27 | **Final Project Presentation** |  |
