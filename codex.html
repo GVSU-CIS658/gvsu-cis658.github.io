@@ -1,0 +1,676 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Using Codex in Web Application Design &#8212; GVSU CIS 371 - Web Application Programming</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'codex';</script>
+    <link rel="icon" href="https://www.gvsu.edu/cms4/asset/94807988-C47A-2A7B-05628C365AC3C2FA/gvsu_avatar_3[1678817053].jpg"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="syllabus.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.jpg" class="logo__image only-light" alt="GVSU CIS 371 - Web Application Programming - Home"/>
+    <img src="_static/logo.jpg" class="logo__image only-dark pst-js-only" alt="GVSU CIS 371 - Web Application Programming - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="syllabus.html">
+                    Welcome
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="resources.html">Resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Quizzes</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="quizzes/1.html">Quiz 1 Emmet + HTML</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quizzes/2.html">Quiz 2 CSS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quizzes/3.html">Quiz 3 TypeScript Basics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quizzes/4.html">Quiz 4 High-order Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quizzes/5.html">Quiz 5 Vue 3 Fundamentals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quizzes/6.html">Quiz 6 Vue 3 and Pinia Basics</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Assignments</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="assignments/css-html.html">1. CSS Zen Garden</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assignments/bm.html">2. Beverage Maker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assignments/cdm.html">3. Custom Drink Maker</a></li>
+<li class="toctree-l1"><a class="reference internal" href="assignments/bs.html">4. Brew &amp; Save</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Project</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="project/term.html">Term Project</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/GVSU-CIS371/gvsu-cis371.github.io/issues/new?title=Issue%20on%20page%20%2Fcodex.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/codex.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Using Codex in Web Application Design</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-codex-matters-in-web-development">Why Codex Matters in Web Development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-codex-can-help-with">What Codex Can Help With</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-codex-should-not-replace">What Codex Should Not Replace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-better-way-to-use-codex">A Better Way to Use Codex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-practical-workflow">A Practical Workflow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-understand-the-project">Step 1: Understand the Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-plan-before-coding">Step 2: Plan Before Coding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-implement-a-small-controlled-change">Step 3: Implement a Small, Controlled Change</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-debug-carefully">Step 4: Debug Carefully</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-use-codex-for-code-review">Step 5: Use Codex for Code Review</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-agents-md-for-larger-projects">Using AGENTS.md for Larger Projects</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-application-examples">Web Application Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risks-of-using-codex">Risks of Using Codex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rules-for-students">Rules for Students</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-prompt-patterns">Example Prompt Patterns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaway">Key Takeaway</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="using-codex-in-web-application-design">
+<h1>Using Codex in Web Application Design<a class="headerlink" href="#using-codex-in-web-application-design" title="Link to this heading">#</a></h1>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h2>
+<p>AI tools are changing how developers design, build, and debug software. One useful example is Codex, which can act as an assistant during software development. In a web application project, Codex can help you understand an unfamiliar codebase, plan a feature, generate small pieces of code, debug issues, and review your work.</p>
+<p>However, Codex should not replace your own thinking. It is most useful when you treat it as a development assistant rather than as a tool that builds the whole project for you. You are still responsible for the design, correctness, testing, and quality of your application.</p>
+<p>This page introduces a practical way to use Codex in web application development.</p>
+</section>
+<section id="why-codex-matters-in-web-development">
+<h2>Why Codex Matters in Web Development<a class="headerlink" href="#why-codex-matters-in-web-development" title="Link to this heading">#</a></h2>
+<p>Web applications often involve many connected parts, such as user interfaces, components, state management, routing, APIs, databases, authentication, and deployment. Students often understand individual pieces but find it difficult to connect them into one complete system.</p>
+<p>Codex can be helpful because it can explain project structure, suggest implementation steps, and help debug problems. Used carefully, it can make development more efficient and help students focus on design and reasoning.</p>
+</section>
+<section id="what-codex-can-help-with">
+<h2>What Codex Can Help With<a class="headerlink" href="#what-codex-can-help-with" title="Link to this heading">#</a></h2>
+<p>In a web application project, Codex can be useful for tasks such as understanding the structure of a project, explaining how components communicate, identifying where a new feature should be implemented, generating a small component or function, debugging frontend or backend issues, reviewing code for possible problems, suggesting cleaner organization or refactoring, and helping write tests or documentation.</p>
+<p>For example, if you open a Vue project and do not know where to start, Codex can help explain the entry point, routing structure, state management, and likely files you would need to modify.</p>
+</section>
+<section id="what-codex-should-not-replace">
+<h2>What Codex Should Not Replace<a class="headerlink" href="#what-codex-should-not-replace" title="Link to this heading">#</a></h2>
+<p>Even though Codex can be very helpful, there are several things it should not replace. It should not replace your understanding of the project requirements, your design decisions, your responsibility for checking correctness, testing and debugging by yourself, or careful review of generated code.</p>
+<p>A student should never submit code that they cannot explain.</p>
+</section>
+<section id="a-better-way-to-use-codex">
+<h2>A Better Way to Use Codex<a class="headerlink" href="#a-better-way-to-use-codex" title="Link to this heading">#</a></h2>
+<p>A weak use of Codex is asking it to build the whole web app. A better use of Codex is to break development into smaller steps. For example, you can ask Codex to explain the existing project, help plan a feature, implement one small part, help debug issues, and review the result.</p>
+<p>This workflow is much safer and much more useful for learning.</p>
+</section>
+<section id="a-practical-workflow">
+<h2>A Practical Workflow<a class="headerlink" href="#a-practical-workflow" title="Link to this heading">#</a></h2>
+<section id="step-1-understand-the-project">
+<h3>Step 1: Understand the Project<a class="headerlink" href="#step-1-understand-the-project" title="Link to this heading">#</a></h3>
+<p>Before making changes, first ask Codex to explain the current application.</p>
+<p>Example prompt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Explain this Vue project structure. What is the entry point? How do components communicate? Where is state managed? Which files would I likely need to modify to add a new feature?
+</pre></div>
+</div>
+<p>This helps you build a mental map of the project before writing code.</p>
+</section>
+<section id="step-2-plan-before-coding">
+<h3>Step 2: Plan Before Coding<a class="headerlink" href="#step-2-plan-before-coding" title="Link to this heading">#</a></h3>
+<p>Do not immediately ask Codex to generate code. First ask for a plan.</p>
+<p>Example prompt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>I want to add a task filter to this to-do app. First inspect the project and give me a minimal implementation plan. Tell me which files need to change, what state updates are needed, and what risks I should consider. Do not implement yet.
+</pre></div>
+</div>
+<p>This is often more useful than jumping directly into coding because it helps you think about architecture and side effects.</p>
+</section>
+<section id="step-3-implement-a-small-controlled-change">
+<h3>Step 3: Implement a Small, Controlled Change<a class="headerlink" href="#step-3-implement-a-small-controlled-change" title="Link to this heading">#</a></h3>
+<p>Once the plan looks good, ask Codex to implement only one focused part.</p>
+<p>Example prompt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Implement a reusable Vue search bar component. Use props and emits. Match the existing project style. Do not modify unrelated files.
+</pre></div>
+</div>
+<p>Good prompts should include the goal, the framework or tools being used, any constraints, and what should not be changed.</p>
+</section>
+<section id="step-4-debug-carefully">
+<h3>Step 4: Debug Carefully<a class="headerlink" href="#step-4-debug-carefully" title="Link to this heading">#</a></h3>
+<p>Codex can also help debug issues, but you should give it a clear description of the problem.</p>
+<p>Example prompt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>This form submits, but the Firestore database does not update correctly. Help me identify the likely cause, explain the issue, and suggest the smallest safe fix.
+</pre></div>
+</div>
+<p>This is often more effective than asking a vague question. The more concrete your prompt is, the more useful the answer is likely to be.</p>
+</section>
+<section id="step-5-use-codex-for-code-review">
+<h3>Step 5: Use Codex for Code Review<a class="headerlink" href="#step-5-use-codex-for-code-review" title="Link to this heading">#</a></h3>
+<p>Codex can also act like a reviewer.</p>
+<p>Example prompt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Review this Vue component like a strict code reviewer. Focus on correctness, reactivity issues, state handling, and possible edge cases.
+</pre></div>
+</div>
+<p>This can help you catch mistakes before submission, but you should still review the code yourself.</p>
+</section>
+<section id="using-agents-md-for-larger-projects">
+<h3>Using <a class="reference external" href="http://AGENTS.md">AGENTS.md</a> for Larger Projects<a class="headerlink" href="#using-agents-md-for-larger-projects" title="Link to this heading">#</a></h3>
+<p>For larger web application projects, you can create an <a class="reference external" href="http://AGENTS.md">AGENTS.md</a> file in the root of the repository. This file gives Codex project context such as the tech stack, folder structure, coding rules, testing steps, and common pitfalls. Codex can read this file before working, which helps it give more consistent and project-aware help.</p>
+<p>Example prompt:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Create an AGENTS.md file for this Vue web application project. Include the project purpose, major folders, state management approach, coding constraints, testing steps, deployment notes, and common pitfalls. Keep it short and practical.
+</pre></div>
+</div>
+<p>For your web application, you can put it in:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>your-project/
+  AGENTS.md
+  package.json
+  src/
+  public/
+  ...
+</pre></div>
+</div>
+</section>
+</section>
+<section id="web-application-examples">
+<h2>Web Application Examples<a class="headerlink" href="#web-application-examples" title="Link to this heading">#</a></h2>
+<p>Codex can be especially useful in web development tasks such as building forms and validating input, creating reusable UI components, managing state with Pinia, connecting frontend code to APIs, structuring Firestore data, handling authentication flows, debugging routing problems, improving SCSS or CSS organization, and fixing deployment issues.</p>
+<p>For example, in a class project, a student might use Codex to understand how a Vue app uses Pinia, then ask for help adding a new store action, and finally ask for help debugging a component that does not update correctly.</p>
+</section>
+<section id="risks-of-using-codex">
+<h2>Risks of Using Codex<a class="headerlink" href="#risks-of-using-codex" title="Link to this heading">#</a></h2>
+<p>There are also important risks when using AI tools in web development.</p>
+<p>One risk is incorrect code. Codex may generate code that looks correct but contains errors.</p>
+<p>Another risk is framework misuse. It may suggest code that does not fit the framework version or project setup.</p>
+<p>A third risk is over-complicated solutions. Sometimes it may generate a solution that works but is much more complex than necessary.</p>
+<p>A fourth risk is poor architectural fit. The generated code may not match the design style of the rest of the application.</p>
+<p>The biggest danger is blind trust. Students may accept generated code without understanding it.</p>
+<p>Because of these risks, generated code should always be reviewed, tested, and explained.</p>
+</section>
+<section id="rules-for-students">
+<h2>Rules for Students<a class="headerlink" href="#rules-for-students" title="Link to this heading">#</a></h2>
+<p>When using Codex for class projects, students should follow a few simple rules. First, ask for explanation before asking for implementation. Second, keep tasks small and specific. Third, give clear constraints. Fourth, test everything. Fifth, never submit code that cannot be explained.</p>
+<p>These rules help students use AI in a way that supports learning rather than replacing it.</p>
+</section>
+<section id="example-prompt-patterns">
+<h2>Example Prompt Patterns<a class="headerlink" href="#example-prompt-patterns" title="Link to this heading">#</a></h2>
+<p>Here are some useful prompt patterns for web application work.</p>
+<p>Understanding a project:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Explain the structure of this project. What are the key files, data flow, and likely extension points?
+</pre></div>
+</div>
+<p>Planning a feature:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Help me plan how to add this feature. Identify the files to change, the state updates needed, and possible risks. Do not implement yet.
+</pre></div>
+</div>
+<p>Generating a component:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Create a small reusable component for this project. Follow the current style and do not modify unrelated files.
+</pre></div>
+</div>
+<p>Debugging:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Here is the error and the related code. Explain the likely cause and propose the smallest safe fix.
+</pre></div>
+</div>
+<p>Reviewing code:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Review this code for correctness, maintainability, and edge cases.
+</pre></div>
+</div>
+</section>
+<section id="key-takeaway">
+<h2>Key Takeaway<a class="headerlink" href="#key-takeaway" title="Link to this heading">#</a></h2>
+<p>Codex is most useful in web application development when it is treated as a thoughtful assistant rather than as an automatic app builder. It can help you understand projects faster, plan more carefully, debug more effectively, and improve your code quality. But it does not replace your responsibility as a developer.</p>
+<p>The best way to use Codex is to combine it with your own reasoning, design judgment, and testing.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-codex-matters-in-web-development">Why Codex Matters in Web Development</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-codex-can-help-with">What Codex Can Help With</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-codex-should-not-replace">What Codex Should Not Replace</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-better-way-to-use-codex">A Better Way to Use Codex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-practical-workflow">A Practical Workflow</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-understand-the-project">Step 1: Understand the Project</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-plan-before-coding">Step 2: Plan Before Coding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-implement-a-small-controlled-change">Step 3: Implement a Small, Controlled Change</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-debug-carefully">Step 4: Debug Carefully</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-use-codex-for-code-review">Step 5: Use Codex for Code Review</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#using-agents-md-for-larger-projects">Using AGENTS.md for Larger Projects</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#web-application-examples">Web Application Examples</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#risks-of-using-codex">Risks of Using Codex</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rules-for-students">Rules for Students</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#example-prompt-patterns">Example Prompt Patterns</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-takeaway">Key Takeaway</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Dr.Yong Zhuang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
